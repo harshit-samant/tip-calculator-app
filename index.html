@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <title>Tip calculator</title>
+
+</head>
+
+<body>
+  <section class="background">
+    <div class="logo-container d-flex justify-content-center">
+      <img src="./images/logo.svg" alt="logo">
+    </div>
+
+    <div class="container-main row mx-auto mt-5">
+      <div class="col-lg-6 p-5">
+        <div class="input-container" onkeyup="calculate()">
+          <label class="label-input mb-2">Bill</label>
+          <br>
+          <img src="./images/icon-dollar.svg" class="input-icon" alt="$">
+          <input id="bill" type="text" class="input" placeholder="0" onkeyup="values(this)">
+          <p class="label-input mt-5">Select Tip %</p>
+          <div class="button-container">
+            <button id="5" type="button" name="button" class="button " href="#" onclick="tipCal(this)">5%</button>
+            <button id="10" type="button" name="button" class="button " onclick="tipCal(this)">10%</button>
+            <button id="15" type="button" name="button" class="button " onclick="tipCal(this)">15%</button>
+            <button id="25" type="button" name="button" class="button " onclick="tipCal(this)">25%</button>
+            <button id="50" type="button" name="button" class="button " onclick="tipCal(this)">50%</button>
+            <input id="custom" type="text" class="input-custom" placeholder="Custom" onkeyup="tipCal(this)">
+          </div>
+
+          <label class="label-input mb-2 mt-3 me-md-5">Number of People</label>
+          <label id="label" class="label-error ms-5">Can't be zero</label>
+          <br>
+          <img src="./images/icon-person.svg" class="input-icon" alt="person">
+          <input id="people" type="text" class="input" placeholder="0" onkeyup="values(this)">
+        </div>
+      </div>
+      <div class="col-lg-6 py-md-5 px-md-4">
+        <div class="col--2 ">
+          <div class="row mb-md-4 mb-sm-1">
+            <div class="col my-auto">
+              <p class="output-label">Tip Amount</p>
+              <p class="output-label-light">/ person</p>
+            </div>
+            <div class="col">
+              <p id="p1" class="output text-end">$0.00</p>
+            </div>
+          </div>
+          <div class="row mb-md-4 mb-sm-1">
+            <div class="col my-auto">
+              <p class="output-label">Total</p>
+              <p class="output-label-light">/ person</p>
+            </div>
+            <div class="col">
+              <p id="p2" class="output text-end">$0.00</p>
+            </div>
+          </div>
+          <button id="reset" type="button" name="button" class="button-reset mt-md-5 mt-sm-3" disabled onclick="reset()">RESET</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/harshit-samant">harshit-samant</a>
+  </div>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="./javascript/script.js" charset="utf-8"></script>
+</body>
+
+</html>

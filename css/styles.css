@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.background {
+  background: #C5E4E7;
+  padding: 16vh 15vw;
+}
+
+.container-main {
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.2);
+}
+
+.label-input {
+  font-size: 16px;
+  font-weight: 700;
+  color: #5E7B7D;
+}
+
+.label-error {
+  font-size: 16px;
+  font-weight: 700;
+  color: #CE8771;
+  visibility: hidden;
+}
+
+.input-container .input-icon {
+  position: absolute;
+  padding: 14px;
+}
+
+.input {
+  text-align: right;
+  width: 100%;
+  height: 45px;
+  background: #F4FAFA;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  outline: none;
+  padding-right: 10px;
+  color: #00494C;
+}
+
+.input-error, div .input-error:focus {
+  border : 2.5px  solid #CE8771;
+}
+
+.input::placeholder {
+  color: rgba(127, 156, 159, 0.7);
+}
+
+.input:focus {
+  border: 2.5px solid #26C0AB;
+}
+
+.button {
+  width: 110px;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+  background: #00494C;
+}
+
+.button:hover ,.button-container .active{
+  color: #00494C;
+  background: #26C0AB;
+}
+
+.input-custom {
+  width: 110px;
+  height: 45px;
+  font-size: 24px;
+  font-weight: 700;
+  background: #F4FAFA;
+  color: #00494C;
+  border-radius: 5px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.input-custom::placeholder {
+  color: rgba(0, 73, 76, 0.7);
+  text-align: center;
+}
+
+.input-custom:focus {
+  border: 2.5px solid #26C0AB;
+  outline: none;
+}
+
+.col--2 {
+  background: #00494C;
+  border-radius: 20px;
+  padding: 5vh 3vw;
+}
+
+.output-label {
+  font-weight: 700;
+  font-size: 16px;
+  color: #F4FAFA;
+  margin: 0;
+}
+
+.output-label-light {
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(244, 250, 250, 0.5);
+}
+
+.output {
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: -0.04em;
+  color: #26C0AB;
+}
+
+.button-reset {
+  width: 100%;
+  height: 50px;
+  color: #00494C;
+  font-weight: 700;
+  background: #26C0AB;
+  border-radius: 5px;
+}
+
+.button-reset:disabled{
+  background: #0A6764;
+}
+
+.button-reset:active {
+  background: #9FE8DF;
+  color: #00494C;
+}
+
+@media (max-width: 500px){
+  .background {
+    padding: 6vh 0;
+  }
+}

@@ -30,7 +30,7 @@
           <label class="label-input mb-2">Bill</label>
           <br>
           <img src="./images/icon-dollar.svg" class="input-icon" alt="$">
-          <input id="bill" type="text" class="input" placeholder="0" onkeyup="values(this)">
+          <input id="bill" type="text" class="input" placeholder="0" onkeyup="values(this)" onkeypress="return event.CharCode >= 48" min="1">
           <p class="label-input mt-5">Select Tip %</p>
           <div class="button-container">
             <button id="5" type="button" name="button" class="button " onclick="tipCal(this)">5%</button>
@@ -38,14 +38,14 @@
             <button id="15" type="button" name="button" class="button " onclick="tipCal(this)">15%</button>
             <button id="25" type="button" name="button" class="button " onclick="tipCal(this)">25%</button>
             <button id="50" type="button" name="button" class="button " onclick="tipCal(this)">50%</button>
-            <input id="custom" type="text" class="input-custom" placeholder="Custom" onkeyup="tipCal(this)">
+            <input id="custom" type="text" class="input-custom" placeholder="Custom" onkeyup="tipCal(this)" onkeypress="return event.CharCode >= 48" min="1">
           </div>
 
           <label class="label-input mb-2 mt-3 me-md-5">Number of People</label>
           <label id="label" class="label-error ms-5">Can't be zero</label>
           <br>
           <img src="./images/icon-person.svg" class="input-icon" alt="person">
-          <input id="people" type="text" class="input" placeholder="0" onkeyup="values(this)">
+          <input id="people" type="text" class="input" placeholder="0" onkeyup="values(this)" onkeypress="return event.CharCode >= 48" min="1">
         </div>
       </div>
       <div class="col-lg-6 py-md-5 px-md-4">
